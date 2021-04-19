@@ -66,11 +66,11 @@
 
 ### 功能测试
 
-- [x] 睡眠/唤醒
+- [x] 睡眠、唤醒
 - [x] 所有 USB 端口
 - [x] 核显硬件加速
-- [x] 板载声卡
-- [x] 板载网卡
+- [x] 板载声卡、网卡
+- [x] 隔空投送、接力、蓝牙
 
 ### 板载网卡设置
 
@@ -135,3 +135,10 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ### 设置默认启动项
 
 - 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
+
+### 展示
+
+![local](./images/local.png)  
+![local](./images/neofetch.png)  
+![local](./images/videoproc.png)  
+![local](./images/diskSpeedTest.png)
