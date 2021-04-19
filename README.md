@@ -139,6 +139,6 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ### 展示
 
 ![local](./images/local.png)  
-![local](./images/neofetch.png)  
-![local](./images/videoproc.png)  
-![local](./images/diskSpeedTest.png)
+![neofetch](./images/neofetch.png)  
+![videoproc](./images/videoproc.png)  
+![diskSpeedTest](./images/diskSpeedTest.png)
