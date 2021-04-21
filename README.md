@@ -94,7 +94,7 @@
 - 将 config.plist 拖到软件中
 - 打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac20,1 机型（生成你的唯一硬件 UUID）
 - 点击按钮【检查序列号有效性】，无效的序列号无法登录 icloud，最好出现下面的提示，属于有效序列号。
-  - ![mac-uuid](./images/mac-id.png)
+  - ![mac-uuid](https://github.com/yueqianW/Hack-Mac/blob/main/images/mac-id.png)
 - 在 config.plist 文件中找到如下代码，记录 MLB、SystemSerialNumber 和 SystemUUID 的值并记住它，更新 EFI 时，用你记录的值替换 /OC/config.plist 下对应的值即可
   - PS: 还可使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
@@ -138,7 +138,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ### 展示
 
-![local](./images/local.png)  
-![neofetch](./images/neofetch.png)  
-![videoproc](./images/videoproc.png)  
-![diskSpeedTest](./images/diskSpeedTest.png)
+![local](https://github.com/yueqianW/Hack-Mac/blob/main/images/local.png)  
+![neofetch](https://github.com/yueqianW/Hack-Mac/blob/main/images/neofetch.png)  
+![videoproc](https://github.com/yueqianW/Hack-Mac/blob/main/images/videoproc.png)  
+![diskSpeedTest](https://github.com/yueqianW/Hack-Mac/blob/main/images/diskSpeedTest.png)
