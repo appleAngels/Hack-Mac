@@ -138,7 +138,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ### 展示
 
-![local](https://github.com/yueqianW/Hack-Mac/raw/master/images/local.png)  
-![neofetch](https://github.com/yueqianW/Hack-Mac/raw/master/images/neofetch.png)  
-![videoproc](https://github.com/yueqianW/Hack-Mac/raw/master/images/videoproc.png)  
-![diskSpeedTest](./images/diskSpeedTest.png)
+![local](https://github.com/yueqianW/Hack-Mac/blob/main/images/local.png)  
+![neofetch](https://github.com/yueqianW/Hack-Mac/blob/main/images/neofetch.png)  
+![videoproc](https://github.com/yueqianW/Hack-Mac/blob/main/images/videoproc.png)  
+![diskSpeedTest](https://github.com/yueqianW/Hack-Mac/blob/main/images/diskSpeedTest.png)
