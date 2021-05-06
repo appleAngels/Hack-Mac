@@ -58,7 +58,9 @@
   - 镜像写入 U 盘后，删除 U 盘中的 config.plist，重命名 config_install.plist 为 config.plist，拖入 U 盘中)
 
 - 系统安装成功后，替换为本 EFI 默认的 config.plist 文件即可
-- 若使用 4K 显示器，请将 "UIScale" 的值修改为 "Ag==" 以获得最佳 ui 体验
+- 若使用 4K 显示器，请使用 DP 1.2 及以上连接线，将 "UIScale" 的值修改为 "Ag==" 以获得最佳 ui 体验
+  - MSI B460M 迫击炮这款主板，DP 接口支持 4k 60hz
+  - HDMI 接口最高只支持 4k 30hz，并且在黑苹果下使用，会出现 黑屏问题
   ```
   <key>UIScale</key>
   <data>Ag==</data>
@@ -138,7 +140,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ### 展示
 
-![local](https://github.com/yueqianW/Hack-Mac/blob/main/images/local.png)  
-![neofetch](https://github.com/yueqianW/Hack-Mac/blob/main/images/neofetch.png)  
-![videoproc](https://github.com/yueqianW/Hack-Mac/blob/main/images/videoproc.png)  
-![diskSpeedTest](https://github.com/yueqianW/Hack-Mac/blob/main/images/diskSpeedTest.png)
+<!-- ![local](https://github.com/yueqianW/Hack-Mac/blob/main/images/local.png)
+![neofetch](https://github.com/yueqianW/Hack-Mac/blob/main/images/neofetch.png)
+![videoproc](https://github.com/yueqianW/Hack-Mac/blob/main/images/videoproc.png)
+![diskSpeedTest](https://github.com/yueqianW/Hack-Mac/blob/main/images/diskSpeedTest.png) -->
