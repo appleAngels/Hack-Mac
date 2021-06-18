@@ -5,13 +5,13 @@
 
 ### 硬件配置
 
-| 配置 | 型号                 |
-| ---- | -------------------- |
-| CPU  | i5-10400             |
-| 主板 | B460M 迫击炮 MSI     |
-| 内存 | 威刚 3000 8G\*2      |
-| 显卡 | i5-10400 核显 UHD630 |
-| 网卡 | fnvi T919            |
+| 配置 | 型号             |
+| ---- | ---------------- |
+| CPU  | i5-10400         |
+| 主板 | B460M 迫击炮 MSI |
+| 内存 | 威刚 3000 8G\*2  |
+| 显卡 | 核显 UHD630      |
+| 网卡 | fnvi T919        |
 
 ### CPU 支持
 
@@ -77,12 +77,12 @@
 ### 板载网卡设置
 
 - 系统偏好设置 -> 网络 -> 以太网（高级） -> 硬件
-- 配置:手动
-- 速度:100baseTX
+- 配置：手动
+- 速度：100baseTX
   - 100 兆宽带，选择 1000baseT 可能会出现无法联网问题
   - 200 兆及以上网络环境可选择 1000baseT
-- 双工:全双工
-- MTU:标准 1500
+- 双工：全双工
+- MTU：标准 1500
 
 ### 关于睡眠的问题
 
@@ -138,7 +138,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 - 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
 
-### 展示
+<!-- ### 展示 -->
 
 <!-- ![local](https://github.com/yueqianW/Hack-Mac/blob/main/images/local.png)
 ![neofetch](https://github.com/yueqianW/Hack-Mac/blob/main/images/neofetch.png)
