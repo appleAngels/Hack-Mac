@@ -138,7 +138,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 - 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
 
-### 展示 -->
+### 展示
 
 ![local](./images/local.png)
 ![neofetch](./images/neofetch.png)
