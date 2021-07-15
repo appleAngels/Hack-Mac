@@ -1,22 +1,27 @@
-## 微星 MSI-B460M-MORTAR + i5-10400
+## i5-10400 + 微星 MSI-B460M-MORTAR
 
-本 EFI 引用自 [@myqqiu](https://github.com/myqqiu) 的黑果项目 [Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)  
-我只是在实践中做了自己的修改
+- 本 EFI 引用自 [@myqqiu](https://github.com/myqqiu) 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
+- win + Mac 双系统安装教程，请参考 [新手挑战黑苹果-超详细的OpenCore黑苹果安装教程](https://www.bilibili.com/video/BV18V41187JZ?from=search&seid=16401274689611028077)，步骤很详细
+
+#### 系统更新记录
+
+- 2021-7-13 更新 openCore 0.7.0 & Big Sur 11.4，无异常
 
 ### 硬件配置
 
 | 配置 | 型号             |
 | ---- | ---------------- |
-| CPU  | i5-10400         |
-| 主板 | B460M 迫击炮 MSI |
+| CPU  | Intel i5-10400   |
+| 主板 | MSI-B460M 迫击炮 |
 | 内存 | 威刚 3000 8G\*2  |
+| 硬盘 | 西数 SN720 1T    |
 | 显卡 | 核显 UHD630      |
 | 网卡 | fnvi T919        |
 
 ### CPU 支持
 
 - [x] 支持所有 10 代核显为 UHD630 的 CPU
-- [x] 无核显带 F 的 10 代 CPU，须使用免驱独显（无法使用核显加速）
+- [x] 无核显带 f 的 10 代 CPU，须使用免驱独显（无法使用核显加速）
 
 ### 显卡支持
 
@@ -48,7 +53,7 @@
 
 ### 系统安装
 
-- 建议使用【[黑果小兵](https://blog.daliansky.net/macOS-BigSur-11.2.3-20D91-Release-version-with-OC-0.6.7-and-Clover-5131-and-PE-original-image.html)】安装镜像，下载双 EFI 版本的系统，以下两个版本实测过均无问题
+- 建议使用【[黑果小兵](https://blog.daliansky.net/macOS-BigSur-11.2.3-20D91-Release-version-with-OC-0.6.7-and-Clover-5131-and-PE-original-image.html)】安装镜像，下载双 EFI 版本的系统，以下两个版本实测过均无异常
 
   - macOS Big Sur 11.1 或者 11.2.3
   - 安装系统时分区格式选择 APFS
@@ -95,8 +100,9 @@
 - 下载 OpenCore Configurator for Mac
 - 将 config.plist 拖到软件中
 - 打开 PlatformInfo -> Model Lookup | Check Coverage 右侧选择 iMac20,1 机型（生成你的唯一硬件 UUID）
-- 点击按钮【检查序列号有效性】，无效的序列号无法登录 icloud，最好出现下面的提示，属于有效序列号。
-  - ![mac-uuid](./images/mac-id.png)
+- 点击【检查序列号有效性】，无效的序列号无法登录 icloud，最好出现下面的提示，属于有效序列号。
+
+  ![mac-uuid](./images/mac-id.png)
 - 在 config.plist 文件中找到如下代码，记录 MLB、SystemSerialNumber 和 SystemUUID 的值并记住它，更新 EFI 时，用你记录的值替换 /OC/config.plist 下对应的值即可
   - PS: 还可使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
