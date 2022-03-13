@@ -6,6 +6,7 @@
 #### 系统更新记录
 
 - 2021-7-13 更新 openCore 0.7.0 & Big Sur 11.4，无异常
+- 2022-3-13 更新 Big Sur 11.6.4，无异常
 
 ### 硬件配置
 
@@ -60,7 +61,7 @@
 
 - 为避免出现兼容性问题，节约时间，可直接使用本 EFI 的 config_install.plist 配置文件
 
-  - 镜像写入 U 盘后，删除 U 盘中的 config.plist，重命名 config_install.plist 为 config.plist，拖入 U 盘中)
+  - 镜像写入U盘后，删除U盘中的 config.plist，重命名 config_install.plist 为 config.plist，拖入 U 盘中
 
 - 系统安装成功后，替换为本 EFI 默认的 config.plist 文件即可
 - 若使用 4K 显示器，请使用 DP 1.2 及以上连接线，将 "UIScale" 的值修改为 "Ag==" 以获得最佳 ui 体验
