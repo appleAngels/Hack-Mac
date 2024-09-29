@@ -1,15 +1,15 @@
-## i5-10400 + 微星 MSI-B460M-MORTAR
+# i5-10400 + 微星 MSI-B460M-MORTAR
 
-### 安装必看的两个内容
+## 安装必看的两个内容
 
 - 本 EFI 引用自 [@myqqiu](https://github.com/myqqiu) 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
 - win + Mac 双系统安装教程，请参考 [新手挑战黑苹果-超详细的OpenCore黑苹果安装教程](https://www.bilibili.com/video/BV18V41187JZ?from=search&seid=16401274689611028077)，步骤很详细
 
-#### EFI下载（更新 EFI 也可以用）
+### EFI下载（更新 EFI 也可以用）
 - [myqqiu的 EFI 下载链接，最新为 1.0.1](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 
 
-#### 系统更新记录
+### 系统更新记录
 
 - 2024-9-26 更新 openCore 1.0.1 & Monterey 12.7.6，无异常（关机不再自动重启）
 - 2023-5-22 更新 Big Sur 11.7.7，无异常（关机不再自动重启）
@@ -17,15 +17,15 @@
 - 2022-3-13 更新 Big Sur 11.6.4，无异常（有时候关机后会自动重启）
 - 2021-7-13 更新 openCore 0.7.0 & Big Sur 11.4，无异常（有时候关机后会自动重启）
 
-#### 系统准备更新版本
+### 系统准备更新版本
 - Ventura 应该可以无痛更新
 - Sonoma 需解决博通网卡驱动问题
 
-#### 更新说明
+### 更新说明
 - 如果只想更新到某一系统版本，可以打开 [如何下载和安装 macOS](https://support.apple.com/zh-cn/102662) 选择对应版本，在 app store 里下载
 - 下载过程中可能会提示更新失败，多次尝试重新下载就好
 
-### 硬件配置
+## 硬件配置
 
 | 配置 | 型号             |
 | ---- | ---------------- |
@@ -48,7 +48,7 @@
   - 使用【独显】须在 BIOS 里强制打开 CPU 核显,否则核显硬件解码失效`（高级 -> 内建显示配置 -> 集成显卡多显示器(IGD Multi-monitor) -> 允许）`
   - 只使用核显可以忽略
 
-### BIOS 版本
+## BIOS 版本
 
 - 当前 BIOS 版本：7C82v13 &nbsp;&nbsp; [BIOS 下载地址](https://cn.msi.com/Motherboard/support/MAG-B460M-MORTAR)
 
@@ -62,14 +62,14 @@
 - OC -> CPU 特征 -> Intel VT-D 技术：禁止
 - OC -> CPU 特征 -> CFG 锁定：禁止
 
-### EFI 配置文件
+## EFI 配置文件
 
 - OpenCore: 1.0.1
 
 - EFI 下载地址: [myqqiu 的地址](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 - 本次 EFI 升级为正式版，非图形界面直接选择 Reset NVRAM 选项，图形界面在选择启动盘时按空格，再选中 Reset NVRAM 选项，(回车键)重置 NVRAM，重置后可能需要在 BIOS 中重新设置磁盘启动优先顺序
 
-### 系统安装
+## 系统安装
 
 - 建议使用【[黑果小兵](https://blog.daliansky.net/macOS-BigSur-11.2.3-20D91-Release-version-with-OC-0.6.7-and-Clover-5131-and-PE-original-image.html)】安装镜像，下载双 EFI 版本的系统，以下两个版本实测过均无异常
 
@@ -90,7 +90,7 @@
   <data>Ag==</data>
   ```
 
-### 功能测试
+## 功能测试
 
 - [x] 睡眠、唤醒
 - [x] 所有 USB 端口
@@ -98,7 +98,7 @@
 - [x] 板载声卡、网卡
 - [x] 隔空投送、接力、蓝牙
 
-### 板载网卡设置
+## 板载网卡设置
 
 - 系统偏好设置 -> 网络 -> 以太网（高级） -> 硬件
 - 配置：手动
@@ -108,13 +108,13 @@
 - 双工：全双工
 - MTU：标准 1500
 
-### 关于睡眠的问题
+## 关于睡眠的问题
 
 - BIOS 默认关闭了 USB 唤醒，睡眠后需按电源键唤醒
 - 需鼠标键盘唤醒的，在 BIOS 里设置 USB 唤醒为允许即可
   - PS: 若睡眠有问题的可使用 Hackintool 工具，切换到电源选项，点击下面的螺丝刀图标修复
 
-### 关于 Mac 序列号的问题 （请一定设置自己的序列号，防止序列号共用）
+## 关于 Mac 序列号的问题 （请一定设置自己的序列号，防止序列号共用）
 
 - 下载 OpenCore Configurator for Mac
 - 将 config.plist 拖到软件中
@@ -152,7 +152,7 @@
 </dict>
 ```
 
-### Win+Mac 双系统解决 Win 系统时间时差问题
+## Win+Mac 双系统解决 Win 系统时间时差问题
 
 - 在 Windows 下运行
 
@@ -160,11 +160,11 @@
 Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
 ```
 
-### 设置默认启动项
+## 设置默认启动项
 
 - 在启动选择界面，先选中要启动的项，然后按键盘的 Ctrl + Enter (回车键) 进入系统，下次重启后默认就选中该项了
 
-### 展示
+## 展示
 
 ![local](./images/local.png)
 ![neofetch](./images/neofetch.png)
