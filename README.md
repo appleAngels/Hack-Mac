@@ -1,25 +1,40 @@
 ## i5-10400 + 微星 MSI-B460M-MORTAR
 
+### 安装必看的两个内容
+
 - 本 EFI 引用自 [@myqqiu](https://github.com/myqqiu) 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
 - win + Mac 双系统安装教程，请参考 [新手挑战黑苹果-超详细的OpenCore黑苹果安装教程](https://www.bilibili.com/video/BV18V41187JZ?from=search&seid=16401274689611028077)，步骤很详细
 
+#### EFI下载（更新 EFI 也可以用）
+- [myqqiu的 EFI 下载链接，最新为 1.0.1](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
+
+
 #### 系统更新记录
 
-- 2021-7-13 更新 openCore 0.7.0 & Big Sur 11.4，无异常
-- 2022-3-13 更新 Big Sur 11.6.4，无异常
-- 2022-3-22 更新 Big Sur 11.6.5，无异常
-- 2023-5-22 更新 Big Sur 11.7.7，无异常
+- 2024-9-26 更新 openCore 1.0.1 & Monterey 12.7.6，无异常（关机不再自动重启）
+- 2023-5-22 更新 Big Sur 11.7.7，无异常（关机不再自动重启）
+- 2022-3-22 更新 Big Sur 11.6.5，无异常（有时候关机后会自动重启）
+- 2022-3-13 更新 Big Sur 11.6.4，无异常（有时候关机后会自动重启）
+- 2021-7-13 更新 openCore 0.7.0 & Big Sur 11.4，无异常（有时候关机后会自动重启）
+
+#### 系统准备更新版本
+- Ventura 应该可以无痛更新
+- Sonoma 需解决博通网卡驱动问题
+
+#### 更新说明
+- 如果只想更新到某一系统版本，可以打开 [如何下载和安装 macOS](https://support.apple.com/zh-cn/102662) 选择对应版本，在 app store 里下载
+- 下载过程中可能会提示更新失败，多次尝试重新下载就好
 
 ### 硬件配置
 
 | 配置 | 型号             |
 | ---- | ---------------- |
 | CPU  | Intel i5-10400   |
-| 主板 | MSI-B460M 迫击炮 |
-| 内存 | 威刚 3000 8G\*2  |
-| 硬盘 | 西数 SN720 1T    |
-| 显卡 | 核显 UHD630 / 蓝宝石 RX5500XT     |
-| 网卡 | fnvi T919        |
+| 主板 | 微星 MSI-B460M 迫击炮 |
+| 内存 | 威刚 3000（8G\*2）  |
+| 硬盘 | 西数 SN720（1T）    |
+| 显卡 | 核显 UHD630 / 蓝宝石 RX5500XT（8G） |
+| 网卡 | fnvi T919（博通BCM94360CD芯片）|
 
 ### CPU 支持
 
@@ -49,16 +64,16 @@
 
 ### EFI 配置文件
 
-- OpenCore: 0.6.8
+- OpenCore: 1.0.1
 
-- EFI 下载地址: [myqqiu 的地址](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
+- EFI 下载地址: [myqqiu 的地址](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
 - 本次 EFI 升级为正式版，非图形界面直接选择 Reset NVRAM 选项，图形界面在选择启动盘时按空格，再选中 Reset NVRAM 选项，(回车键)重置 NVRAM，重置后可能需要在 BIOS 中重新设置磁盘启动优先顺序
 
 ### 系统安装
 
 - 建议使用【[黑果小兵](https://blog.daliansky.net/macOS-BigSur-11.2.3-20D91-Release-version-with-OC-0.6.7-and-Clover-5131-and-PE-original-image.html)】安装镜像，下载双 EFI 版本的系统，以下两个版本实测过均无异常
 
-  - macOS Big Sur 11.1 或者 11.2.3
+  - macOS Big Sur 11.1 / 11.2.3 或者 macOS Monterey 12.7.6
   - 安装系统时分区格式选择 APFS
 
 - 为避免出现兼容性问题，节约时间，可直接使用本 EFI 的 config_install.plist 配置文件
@@ -66,6 +81,7 @@
   - 镜像写入U盘后，删除U盘中的 config.plist，重命名 config_install.plist 为 config.plist，拖入 U 盘中
 
 - 系统安装成功后，替换为本 EFI 默认的 config.plist 文件即可
+  - 如果使用 AMD RX5500XT 等系列显卡，使用 RX5500XT 的 config.plist 文件
 - 若使用 4K 显示器，请使用 DP 1.2 及以上连接线，将 "UIScale" 的值修改为 "Ag==" 以获得最佳 ui 体验
   - MSI B460M 迫击炮这款主板，DP 接口支持 4k 60hz
   - HDMI 接口最高只支持 4k 30hz，并且在黑苹果下使用，会出现 黑屏问题
@@ -106,7 +122,8 @@
 - 点击【检查序列号有效性】，无效的序列号无法登录 icloud，最好出现下面的提示，属于有效序列号。
 
   <img src="./images/mac-id.png" alt="mac-uuid" style="zoom:50%;" />
-- 在 config.plist 文件中找到如下代码，记录 MLB、SystemSerialNumber 和 SystemUUID 的值并记住它，更新 EFI 时，用你记录的值替换 /OC/config.plist 下对应的值即可
+- 在 config.plist 文件中找到如下代码，记录 MLB、SystemSerialNumber 和 SystemUUID 的值并记住它
+  - 更新 EFI 时，用你记录的值替换 /OC/config.plist 下对应的值即可
   - PS: 还可使用 Hackintool 工具（系统 -> 序列号生成器）来获取三码
 
 ```
