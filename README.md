@@ -1,4 +1,4 @@
-# i5-10400 + 微星 MSI-B460M-MORTAR
+# Hack-Mac i5-10400 + MSI-B460M + RX5500XT
 
 ## 安装必看的两个内容
 
