@@ -2,7 +2,7 @@
 
 ## 安装必看的两个内容
 
-- 本 EFI 引用自 [@myqqiu](https://github.com/myqqiu) 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/myqqiu/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
+- 本 EFI 引用自 MrChium 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
 - win + Mac 双系统安装教程，请参考 [新手挑战黑苹果-超详细的OpenCore黑苹果安装教程](https://www.bilibili.com/video/BV18V41187JZ?from=search&seid=16401274689611028077)，步骤很详细
 
 ### EFI下载（更新 EFI 也可以用）
