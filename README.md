@@ -5,10 +5,6 @@
 - 本 EFI 引用自 MrChium 的黑果项目 [Hackintosh B460M-MORTAR-i5 10500](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630)，在实践中做了自己的修改
 - win + Mac 双系统安装教程，请参考 [新手挑战黑苹果-超详细的OpenCore黑苹果安装教程](https://www.bilibili.com/video/BV18V41187JZ?from=search&seid=16401274689611028077)，步骤很详细
 
-### EFI下载（更新 EFI 也可以用）
-- [myqqiu的 EFI 下载链接，最新为 1.0.1](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
-
-
 ### 系统更新记录
 
 - 2024-9-29 更新 Ventura 13.7，无异常
@@ -64,9 +60,7 @@
 
 ## EFI 配置文件
 
-- OpenCore: 1.0.1
-
-- EFI 下载地址: [myqqiu 的地址](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases)
+-  [EFI 下载地址](https://github.com/MrChium/Hackintosh-B460M-MORTAR-i5-10500-iGPU-UHD630/releases) 最新为 OpenCore 1.0.1
 - 本次 EFI 升级为正式版，非图形界面直接选择 Reset NVRAM 选项，图形界面在选择启动盘时按空格，再选中 Reset NVRAM 选项，(回车键)重置 NVRAM，重置后可能需要在 BIOS 中重新设置磁盘启动优先顺序
 
 ## 系统安装
